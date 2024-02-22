@@ -37,6 +37,13 @@
       background-color: gray;
       color: white;
     }
+    @media screen and (max-width: 768px) { /* 可以根据需要修改媒体查询的宽度阈值 */
+      iframe {
+        width: 100vw;
+        height: 100vh;
+        transform: scale(1); /* 防止在某些浏览器中 iframe 缩小 */
+      }
+    }
   </style>
 </head>
 <body>
